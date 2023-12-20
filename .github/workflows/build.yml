@@ -15,7 +15,7 @@ on:
       versionName:
         description: 'version name'
         required: true
-        default: 'v0.16.48'
+        default: 'v0.0.1'
 
 jobs:
   try_create_release:
