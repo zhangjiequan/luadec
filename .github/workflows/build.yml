@@ -14,12 +14,15 @@ jobs:
       matrix:
         lua_version: ['5.1']
     steps:
-      - uses: actions/checkout@v2
 
-      - name: Set up MinGW
-        uses: egor-tensin/setup-mingw@v2
+      - name: Install MSYS2 with MinGW 64-bit
+        uses: msys2/setup-msys2@v2
         with:
-          platform: x64
+          msystem: MINGW64
+          update: true
+          install: mingw-w64-x86_64-gcc mingw-w64-x86_64-binutils mingw-w64-x86_64-cmake mingw-w64-x86_64-make git
+
+      - uses: actions/checkout@v2
 
       - name: Checkout submodule and build Lua
         run: |
