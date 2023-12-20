@@ -4,3 +4,4 @@ luadec/allopcodes.luac
 luadec/allopcodes_lua.h
 luadec/allopcodes_luac.h
 *.exe
+.vscode/
