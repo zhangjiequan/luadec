@@ -1,5 +1,5 @@
-- [README 中文](./README_zh.md)
-- [README English](./README.md)
+- [README 中文](./ReadMe_zh.md)
+- [README English](./ReadMe.md)
 
 ![Last Commit](https://img.shields.io/github/last-commit/zhangjiequan/luadec?style=flat-square)
 [![Open Issues](https://img.shields.io/github/issues-raw/zhangjiequan/luadec?style=flat-square)](https://github.com/zhangjiequan/luadec/issues)
