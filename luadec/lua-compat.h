@@ -10,6 +10,7 @@
 	#define UPVAL_TYPE TString*
 	#define NUPS(f) (f->nups)
 	#define UPVAL_NAME(f, r) (f->upvalues[r])
+	#define SAVE_GET_UPVAL_NAME_STR(f, r) (getstr((f)->upvalues[r]))
 
 	#define LUADEC_TFORLOOP OP_TFORLOOP
 	#define FUNC_BLOCK_END(f) (f->sizecode - 1)
@@ -28,6 +29,13 @@
 	#define UPVAL_TYPE Upvaldesc
 	#define NUPS(f) (f->sizeupvalues)
 	#define UPVAL_NAME(f, r) (f->upvalues[r].name)
+	static inline const char *idx_to_string(lu_byte idx)
+	{
+		static char idx_str[200];
+		sprintf(idx_str, "upval_%d", idx);
+		return idx_str;
+	}
+	#define SAVE_GET_UPVAL_NAME_STR(f, r) ((f)->upvalues[r].name ? getstr((f)->upvalues[r].name) : idx_to_string((f)->upvalues[r].idx))
 
 	#define LUADEC_TFORLOOP OP_TFORCALL
 	#define FUNC_BLOCK_END(f) (f->sizecode)

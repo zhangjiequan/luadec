@@ -93,7 +93,7 @@ const char* getLocalName(const Proto* f, int i) {
 const char* getUpvalName(const Proto* f, int i) {
 	if (f->upvalues && i < f->sizeupvalues) {
 		// no need to test after FixUpvalNames
-		return getstr(UPVAL_NAME(f, i));
+		return SAVE_GET_UPVAL_NAME_STR(f, i);
 	} else {
 		sprintf(unknown_upvalue, "ERROR_unknown_upvalue_%d", i);
 		return unknown_upvalue;
