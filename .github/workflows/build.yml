@@ -73,7 +73,7 @@ jobs:
       - name: Compress Artifacts
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.createRelease == 'true'
         run: |
-          Compress-Archive -Path luadec/luadec.exe -DestinationPath luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}.zip
+          Compress-Archive -Path luadec/luadec.exe -DestinationPath luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}_windows_x86_64.zip
         shell: powershell
 
       - name: Upload Release Asset
@@ -83,6 +83,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKENFORCI }}
         with:
           upload_url: ${{ needs.try_create_release.outputs.upload_url }}
-          asset_path: ./luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}.zip
-          asset_name: luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}.zip
+          asset_path: ./luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}_windows_x86_64.zip
+          asset_name: luadec-Lua${{ matrix.lua_version }}_${{ github.event.inputs.versionName }}_windows_x86_64.zip
           asset_content_type: application/zip
