@@ -1,0 +1,36 @@
+name: LuaDec Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        lua_version: ['5.1', '5.2', '5.3']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup MinGW
+        uses: egor-tensin/setup-mingw@v3
+
+      - name: Checkout submodule and build Lua
+        run: |
+          git submodule update --init lua-${{ matrix.lua_version }}
+          cd lua-${{ matrix.lua_version }}
+          mingw32-make mingw
+
+      - name: Build luadec
+        run: |
+          cd luadec
+          mingw32-make LUAVER=${{ matrix.lua_version }}
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: luadec-Lua${{ matrix.lua_version }}
+          path: luadec/luadec.exe
