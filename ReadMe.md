@@ -1,6 +1,8 @@
 - [README 中文](./ReadMe_zh.md)
 - [README English](./ReadMe.md)
 
+# LuaDec
+
 ![Last Commit](https://img.shields.io/github/last-commit/zhangjiequan/luadec?style=flat-square)
 [![Open Issues](https://img.shields.io/github/issues-raw/zhangjiequan/luadec?style=flat-square)](https://github.com/zhangjiequan/luadec/issues)
 ![Contributors](https://img.shields.io/github/contributors/zhangjiequan/luadec?style=flat-square)
@@ -97,7 +99,7 @@ There are some more options, usually for debug purposes, or for cases where the 
 Use -h to get a complete list of usable parameters
 
 
-Credits
+Acknowledgments
 -------
 
 Original by Hisham Muhammad (http://luadec.luaforge.net)
@@ -105,3 +107,32 @@ Original by Hisham Muhammad (http://luadec.luaforge.net)
 Ongoing port to Lua 5.1 by Zsolt Sz. Sztupak (https://github.com/sztupy/luadec51/)
 
 The internals of Lua5.1 was learned from Kein-Hong Man's A No-Frills Introduction to Lua 5.1 VM Instructions
+
+## Roadmap
+
+No changes are currently planned.
+
+## License
+
+LuaDec is licensed under the [MIT](./LICENSE) license.
+
+## Special Thanks Instruction
+
+If you find this tool useful, please mention my name in your credits screen. Something like "LuaDec by viruscamp & zhangjiequan" or "Thanks to viruscamp & zhangjiequan" would be very much appreciated.
+
+## Collaborate
+
+Feel free to fork the project and make modifications for yourself or to share by creating pull requests. Also, create issues for feature requests or bug reports if you want to help improving this tool, thanks!
+
+## Contact
+
+Contact me at zhangjiequan@qq.com
+
+## Donate
+
+LuaDec is a free and open-source software. If you like it and find it helpful, you can buy me a coffee!
+
+![image.png](https://s2.loli.net/2023/11/22/ChyaeWrgXYS9NEJ.png)
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=zhangjiequan/LuaDec&type=Date)](https://star-history.com/#zhangjiequan/LuaDec&Date)

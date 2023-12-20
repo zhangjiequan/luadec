@@ -1,5 +1,7 @@
-- [README 中文](./README_zh.md)
-- [README English](./README.md)
+- [README 中文](./ReadMe_zh.md)
+- [README English](./ReadMe.md)
+
+# LuaDec
 
 ![Last Commit](https://img.shields.io/github/last-commit/zhangjiequan/luadec?style=flat-square)
 [![Open Issues](https://img.shields.io/github/issues-raw/zhangjiequan/luadec?style=flat-square)](https://github.com/zhangjiequan/luadec/issues)
@@ -105,3 +107,32 @@ outputs:
 由 Zsolt Sz. Sztupak 持续移植到 Lua 5.1 (https://github.com/sztupy/luadec51/)
 
 Lua5.1 的内部机制是通过 Kein-Hong Man 的《Lua 5.1 VM 指令简介》学习的
+
+## 线路图
+
+当前没有计划的变更。
+
+## 许可
+
+LuaDec 根据 [MIT](./LICENSE) 许可证授权。
+
+## 致谢
+
+如果你觉得此工具有用，请在你的致谢界面提及我的名字。像 "LuaDec 由 viruscamp & zhangjiequan 制作" 或 "感谢 viruscamp & zhangjiequan" ，将不胜感激。
+
+## 合作
+
+随意Fork本项目并进行自定义修改，可以为自己使用，也可以通过创建pull requests来共享你的修改。如果你想帮助改进此工具，请通过提交issues来提供功能请求或错误报告，谢谢！
+
+## 联系
+
+通过电子邮件联系我：zhangjiequan@qq.com
+
+## 捐赠
+
+LuaDec 是一款免费且开源的软件。如果你觉得它不错并且对你有帮助，可以请我喝一杯咖啡！
+
+![image.png](https://s2.loli.net/2023/11/22/1nURWl8m5Icx7HT.png)
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=zhangjiequan/LuaDec&type=Date)](https://star-history.com/#zhangjiequan/LuaDec&Date)
