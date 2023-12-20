@@ -76,6 +76,8 @@ mingw32-make LUAVER=5.3
     luadec abc.lua  
 * 反汇编 Lua 源文件或二进制文件  
     luadec -dis abc.lua  
+* -se 使用选定的编码输出字符串，可用的编码有 ASCII GB2312 GBK GB18030 BIG5 UTF8  
+    luadec -se UTF8 abc.luac  
 * -pn 打印嵌套函数结构，加参考 -fn  
 ```
 luadec -pn test.lua

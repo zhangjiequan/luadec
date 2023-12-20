@@ -76,6 +76,8 @@ Usage
     luadec abc.lua  
 * disassemble lua source or binary  
     luadec -dis abc.lua  
+* -se output strings using selected encoding, available encodings are ASCII GB2312 GBK GB18030 BIG5 UTF8
+    luadec -se UTF8 abc.luac
 * -pn print nested functions structure, could be used by -fn  
 ```
 luadec -pn test.lua
