@@ -11,7 +11,7 @@ LuaDec is free software and uses the same license as the original LuaDec.
 Compiling
 ---------
 ```
-git clone https://github.com/viruscamp/luadec
+git clone https://github.com/zhangjiequan/luadec
 cd luadec
 git submodule update --init lua-5.1
 cd lua-5.1

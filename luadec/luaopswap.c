@@ -71,7 +71,7 @@ static void usage(const char* message, const char* arg) {
 	}
 	fprintf(stderr,
 		"LuaOpSwap " VERSION_STRING " for " LUA_VERSION "\n"
-		" by VirusCamp (https://github.com/viruscamp/luadec)\n"
+		" by zhangjiequan (https://github.com/zhangjiequan/luadec)\n"
 		"usage: %s [options] <input.luac> [opcodes.txt]\n"
 		" Swap the opcodes in <input.luac> using method in [opcodes.txt]\n"
 		" Default [opcodes.txt] is '"OPCODES_TXT"'.\n"

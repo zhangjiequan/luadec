@@ -9,6 +9,7 @@
   The COPYRIGHT file describes the conditions under which this
   software may be distributed (basically a Lua 5-style license.)
 
+  https://github.com/zhangjiequan/luadec/tree/master/ChunkSpy
   https://github.com/viruscamp/luadec/tree/master/ChunkSpy
   http://luaforge.net/projects/chunkspy/
   http://www.geocities.com/keinhong/chunkspy.html
@@ -28,7 +29,7 @@
 title = [[
 ChunkSpy: A Lua 5.3 binary chunk disassembler
 Version 0.9.9 (20150329)
-Copyright (c) 2004-2006 Kein-Hong Man , 2014-2015 VirusCamp
+Copyright (c) 2004-2006 Kein-Hong Man , 2014-2015 VirusCamp , 2023 zhangjiequan
 The COPYRIGHT file describes the conditions under which this
 software may be distributed (basically a Lua 5-style license.)
 ]]
