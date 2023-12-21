@@ -63,7 +63,7 @@ cd ../luadec
 mingw32-make LUAVER=5.3
 ```
 
-There are also project files for vc2008, tested for vc2008 and vc2013.  
+There are also project files for vc2008, tested for vc2008 , vc2013 and vc2022.  
 
 Before compiling, make sure there are correct sources in lua-5.1 , lua-5.2 or lua-5.3.
 
