@@ -1,9 +1,11 @@
-luadec/NUL
-*.o
 luadec/allopcodes.luac
+luadec/allopcodes.lua
 luadec/allopcodes_lua.h
 luadec/allopcodes_luac.h
-luadec/allopcodes.lua
 luadec/srcversion.h
+luadec/NUL
+
+*.o
 *.exe
+
 .vscode/
