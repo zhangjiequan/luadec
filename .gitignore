@@ -3,5 +3,7 @@ luadec/NUL
 luadec/allopcodes.luac
 luadec/allopcodes_lua.h
 luadec/allopcodes_luac.h
+luadec/allopcodes.lua
+luadec/srcversion.h
 *.exe
 .vscode/
