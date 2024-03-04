@@ -21,6 +21,8 @@
 
 [![Github CI Status](https://github.com/zhangjiequan/luadec/actions/workflows/build.yml/badge.svg)](https://github.com/zhangjiequan/luadec/actions)
 
+![Custom](https://img.shields.io/badge/zhangjiequan-green)
+
 Advantages of This Fork Compared to the Original Repository
 ---------
 
